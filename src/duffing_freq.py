@@ -18,6 +18,7 @@ omega =  1.414
 mass = 1 # fixed
 num_Poincare = 30
 h = 0.1
+
 responselist = []
 freqlist = []
 omegas = np.arange(h,2,h/10)
