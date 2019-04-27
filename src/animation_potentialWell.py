@@ -9,14 +9,14 @@ import matplotlib.pylab as plt
 import matplotlib.animation as animation
 from duffing import duffing
 
-r = [0, 0]
-delta = 0.1
+r = [0, 1]
+delta = 0
 alpha = -1 # positive -> negative, negative -> positive
 beta = 1
-gamma = 0.05
+gamma = 0
 omega = 1.4
 mass = 1 # fixed
-num_Poincare = 30
+num_Poincare = 10
 h = 0.1
 
 arrays = duffing(r, delta, alpha, beta, gamma, omega, mass, num_Poincare, h)
