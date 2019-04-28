@@ -11,21 +11,23 @@ from duffing import duffing
 # get frequency response
 r = [0, 0]
 delta = 0.1
-alpha = 1 # positive -> negative, negative -> positive
+alpha = 1 
 beta = 0.004
 gamma = 1
 omega =  1.414
 mass = 1 # fixed
 num_Poincare = 30
-h = 0.1
+h = 0.1 # kept to 0.1 for running time issue
 
 responselist = []
 freqlist = []
+# run through [h, 2] with steps of h/10
 omegas = np.arange(h,2,h/10)
 
 for omega in omegas:
     arrays = duffing(r, delta, alpha, beta, gamma, omega, mass, num_Poincare, h)
     xpoints = arrays["xpoints"]
+    # response: z/gamma ratio found from harmonic balance method
     response = np.sqrt( 1/( (omega**2 - alpha - 3/4*beta*np.max(xpoints)**2)**2 + (delta*omega)**2 ) )
     responselist.append(response)
     freq = omega/np.sqrt(alpha)

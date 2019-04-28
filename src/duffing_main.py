@@ -9,7 +9,7 @@ from duffing import duffing
 
 r = [0, 0]
 delta = 0.1
-alpha = -1 # positive -> negative, negative -> positive
+alpha = -1 
 beta = 1
 gamma = 0.05
 omega = 1.4

@@ -2,6 +2,7 @@
 """
 @author: Andy Jeong
 """
+# visualization through VPython
 
 import numpy as np
 from visual import *
@@ -30,8 +31,11 @@ scene = display(title='Chaotic Motion in Moonbeam - simplified')
 ceiling = box(pos=(0,0.1,0), size=(4,0.1,1), color=color.yellow)
 side = box(pos=(-np.max(xpoints)-0.5,-0.5,0), size=(0.1,1.3,1), color=color.yellow)
 floor = box(pos=(0,-1.1,0), size=(4,0.1,1), color=color.green)
+
+# boxes indicate locations for magnets for now
 magnet1 = box(pos=(np.max(xpoints),-0.8,0), height=0.5, width=0.5, length=0.5)
 magnet2 = box(pos=(-np.max(xpoints),-0.8,0), height=0.5, width=0.5, length=0.5)
+
 fixball = sphere(make_trail = True, trail_type="curve", interval=1, retain=20)
 moveball = sphere(make_trail=True, trail_type="curve", interval=1, retain=30, color=color.blue)
 fixball.radius=0.1
@@ -48,6 +52,9 @@ ic, fnum = 0, 0
 for i in range(len(xpoints)):
     rate(120)
     moveball.pos = (xpoints[i], -1, 0)
+    # obtain a curved structure by approx movement in percentage
+    # curve() only follows along an axis, so it's hard to achieve
+    # a dynamically moving structure
     pointer.pos=[(0,0,0), \
                  (moveball.x*0.1,moveball.y*0.15,0), \
                  (moveball.x*0.15,moveball.y*0.22,0), \
@@ -59,6 +66,7 @@ for i in range(len(xpoints)):
                  (moveball.x*0.8,moveball.y*0.92,0), \
                  (moveball.x*0.9,moveball.y*0.99,0), \
                  (moveball.x,moveball.y,0)]
+    # trail for previous 4 points
     pointer.retain = 4
     
     # capture images

@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr 19 18:14:20 2019
-
-@author: jong7
+@author: Andy Jeong
 """
 
-#https://galileo-unbound.blog/2019/03/20/georg-duffing-and-his-equation/
+# reference: https://galileo-unbound.blog/2019/03/20/georg-duffing-and-his-equation/
 import numpy as np
 from scipy import integrate
 from matplotlib import pyplot as plt
 
+# numerical method to solve Duffing Equation 
+# using built-in odeint in scipy.integrate package
+# this uses conventional LSODA method, for integrating 1st order diffEq
 plt.close('all')
 alpha = -1
 beta = 1

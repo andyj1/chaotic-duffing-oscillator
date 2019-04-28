@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Apr 24 22:51:28 2019
-
-@author: jong7
 """
 
 """Easy matplotlib animation."""
@@ -15,7 +13,6 @@ from matplotlib.animation import ArtistAnimation
 
 
 __version__ = '0.2.0'
-
 
 class Camera:
     """Make animations easier."""

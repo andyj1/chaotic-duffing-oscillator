@@ -8,18 +8,19 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from duffing import duffing
 import numpy as np
-# reference: https://github.com/jwkvam/celluloid
+# Camera reference: https://github.com/jwkvam/celluloid
 from celluloid import Camera
 
+# get phase-space diagram
 #r = [0,0]
 #delta = 0.1
-#alpha = -1 # positive -> negative, negative -> positive
+#alpha = -1 
 #beta = 1
 #gamma = 0.38
 #omega = 1.4
 #mass = 1 # fixed
 #num_Poincare = 20
-#h = 0.1
+#h = 0.1 # kept to 0.1 for running time issue
 #
 #arrays = duffing(r, delta, alpha, beta, gamma, omega, mass, num_Poincare, h)
 #xpoints = arrays["xpoints"]
@@ -40,13 +41,13 @@ from celluloid import Camera
 # get frequency response
 r = [0, 0]
 delta = 0.1
-alpha = 1 # positive -> negative, negative -> positive
+alpha = 1 
 beta = 0.004
 gamma = 1
 omega =  1.414
 mass = 1 # fixed
 num_Poincare = 10
-h = 0.1
+h = 0.1 # kept to 0.1 for running time issue
 
 responselist = []
 freqlist = []

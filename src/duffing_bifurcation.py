@@ -9,15 +9,16 @@ import matplotlib.pylab as plt
 from duffing import duffing
 
 # get bifurcations
+# plots min and max displacement over time to see overall divergence
 r = [0, 0]
 delta = 0.01
-alpha = 1 # positive -> negative, negative -> positive
+alpha = 1 
 beta = 1
 #gamma = 1
 omega =  1.414
 mass = 1 # fixed
 num_Poincare = 30
-h = 0.01
+h = 0.01 # kept to 0.1 for running time issue
 
 xmax, xmin = [], []
 gammas = np.arange(0, 0.6, h)
