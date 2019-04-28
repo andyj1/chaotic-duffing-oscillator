@@ -5,6 +5,7 @@ Created on Sun Apr 14 01:01:39 2019
 @author: jong7
 """
 
+# main program that computes numerical approximation to the Duffing Equation using Runge-Kutta fourth order method
 import numpy as np
 
 """

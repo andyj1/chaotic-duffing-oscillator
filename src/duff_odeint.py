@@ -9,6 +9,9 @@ import numpy as np
 from scipy import integrate
 from matplotlib import pyplot as plt
 
+# numerical method to solve Duffing Equation 
+# using built-in odeint in scipy.integrate package
+# this uses conventional LSODA method, for integrating 1st order diffEq
 plt.close('all')
 alpha = -1
 beta = 1

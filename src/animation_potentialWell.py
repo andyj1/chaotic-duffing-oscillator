@@ -11,13 +11,13 @@ from duffing import duffing
 
 r = [0, 1]
 delta = 0
-alpha = -1 # positive -> negative, negative -> positive
+alpha = -1 
 beta = 1
 gamma = 0
 omega = 1.4
 mass = 1 # fixed
 num_Poincare = 10
-h = 0.1
+h = 0.1 # kept to 0.1 for running time issue
 
 arrays = duffing(r, delta, alpha, beta, gamma, omega, mass, num_Poincare, h)
 xpoints = arrays["xpoints"]
