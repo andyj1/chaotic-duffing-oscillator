@@ -10,23 +10,28 @@
   <dt>Tools/Packages</dt>
   <dd>Visual Python, Matplotlib, Scipy, Numpy, FFMpeg</dd>
 
+___
+
   <dt>Purpose</dt>
   <dd>Analyze stability through measures including eigenvalues of Jacobian/Lyapunov exponent, strange attractor in phase-space diagram, Poincare Sections and bifurcation due to period doubling</dd>
   <dd>Determine point of bifurcation in terms of ratio of excitationo amplitude to damping coefficient</dd>
   <dd>Make graphs representing periodic, quasi-periodic, and chaotic behavior of the system</dd>
   <dd>Compare behaviors in time-,space- and frequency- domains under different conditions for initial conditions and parameters of interest </dd>
 
+  <dt>Duffing Oscillator</dt>
+  <dd>Duffing Oscillator(Equation) is a (nonlinear) system that is often periodically forced and damped with some nonlinear elasticity associated. The governing equation is as follows:
+  <img src="https://latex.codecogs.com/gif.latex?\frac{\partial^2&space;x}{\partial&space;t^2}&space;&plus;&space;\delta\frac{\partial&space;x}{\partial&space;t}&space;&plus;&space;\beta&space;x&space;&plus;&space;\alpha&space;x^3&space;=&space;\gamma&space;cos(\omega&space;t)" title="\frac{\partial^2 x}{\partial t^2} + \delta\frac{\partial x}{\partial t} + \beta x + \alpha x^3 = \gamma cos(\omega t)" />, where the parameters are damping coefficient, nonlinearity coefficient, linear stiffness, excitation amplitude, excitation angular frequency, in order.</dd>
+  
   <dt>Related Topics</dt>
   <dd>Visualization of numerically approximated data</dd>
   <dd>Solving second-order ordinary differential equations</dd>
   <dd>Observing chaos through eigenvalues and time series graphs</dd>
   
   <dt>Methods Used</dt>
-  <dd>Runge-Kutta Algorithm (4th order)</dd>
-  <dd>Harmonic Balance Method</dd>
-  --- most commonly used method in studying the steady-state frequency response in a nonlinear dynamical system (autonomous and non-autonomous). By assumed the response in terms of a Fourier series in the differential equation and separating the harmonic coefficients, the frequency amplitude and the unknown coefficients in the response relation of the system can be determined (assuming the response to be in form of a sinusoid).</dd>
+  <dd>Runge-Kutta Algorithm (4th order)
+    - widely used numerical method for differential equations, by interpolating derivatives at half-way points and taking a weighted average with the step size into account</dd>
+  <dd>Harmonic Balance Method
+    - most commonly used method in studying the steady-state frequency response in a nonlinear dynamical system (autonomous and non-autonomous). By assumed the response in terms of a Fourier series in the differential equation and separating the harmonic coefficients, the frequency amplitude and the unknown coefficients in the response relation of the system can be determined (assuming the response to be in form of a sinusoid).</dd>
 
-  <dt>Duffing Oscillator</dt>
-  <dd>Duffing Oscillator(Equation) is a (nonlinear) system that is often periodically forced and damped with some nonlinear elasticity associated. The governing equation is <img src="https://latex.codecogs.com/gif.latex?\frac{\partial^2&space;x}{\partial&space;t^2}&space;&plus;&space;\delta\frac{\partial&space;x}{\partial&space;t}&space;&plus;&space;\beta&space;x&space;&plus;&space;\alpha&space;x^3&space;=&space;\gamma&space;cos(\omega&space;t)" title="\frac{\partial^2 x}{\partial t^2} + \delta\frac{\partial x}{\partial t} + \beta x + \alpha x^3 = \gamma cos(\omega t)" />, where the parameters are damping coefficient, nonlinearity coefficient, linear stiffness, excitation amplitude, excitation angular frequency, in order.
 </dl>
 
