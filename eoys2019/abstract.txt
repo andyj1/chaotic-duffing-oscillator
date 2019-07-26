@@ -1,0 +1,5 @@
+Abstract
+
+The chaotic behavior in motion is not unusual to observe in practice in common nonlinear differential equations. Through close examination of nonlinear dynamics of a system governed by a Duffing’s Equation, one can observe how phase-space motion follows a strange attractor as harmonic excitations are applied to the system. A Duffing oscillator system of complexity as simple as a second-order ordinary differential equation exhibits bifurcation at some threshold value of excitation due to periodic doubling, bounded by five parameters and initial conditions. Through visual aids and graphical responses, the chaotic motion of a Duffing system (i.e. spring) is observed, and verified in simple visualization techniques in Python.
+
+The video demonstrates a single- and double-well cases along with their Poincare Sections, which is a plot of phase-space for every period of the system. In addition, a simplified 1D visual of a MoonBeam structure (a magnetoelastic beam deflected by magnetic forces on both sides) and the frequency response for a hardening spring system is demonstrated.
