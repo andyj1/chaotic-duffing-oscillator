@@ -32,8 +32,7 @@ ___
     - widely used numerical method for differential equations, by interpolating derivatives at half-way points and taking a weighted average with the step size into account</dd>
   <dd>Harmonic Balance Method
     - most commonly used method in studying the steady-state frequency response in a nonlinear dynamical system (autonomous and non-autonomous). By assumed the response in terms of a Fourier series in the differential equation and separating the harmonic coefficients, the frequency amplitude and the unknown coefficients in the response relation of the system can be determined (assuming the response to be in form of a sinusoid).</dd>
-
-  <dt>Final Paper</dt>
-  [FinalPaper](doc/Jeong_Ph235_FinalProject.pdf)
   
 </dl>
+#### Link to final paper:
+  - [Final Paper]('doc/Jeong_Ph235_FinalProject.pdf')
