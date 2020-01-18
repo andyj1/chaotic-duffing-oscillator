@@ -36,4 +36,4 @@ ___
 </dl>
 
 #### Link to final paper:
-  - [Final Paper]('doc/Jeong_Ph235_FinalProject.pdf')
+  - [Final Paper]('https://github.com/andyj1/chaotic-duffing-oscillator/tree/master/doc/Jeong_Ph235_FinalProject.pdf')
